@@ -94,19 +94,30 @@ section {
      position: relative;
 }
 
+.slide1,
+.slide2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 90vh; /* ensures full viewport coverage but not oversized */
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  position: relative;
+  color: #fff;
+}
+
 .slide1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('http://localhost:41914/public/img/bg_banner2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('http://localhost:4200/assets/img/bg_banner2.jpg');
 }
 
 .slide2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('http://localhost:41914/public/img/bg_banner1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('http://localhost:4200/assets/img/bg_banner1.jpg');
 }
+
 
 .slide .display-3 {
     text-transform: uppercase;
@@ -219,11 +230,14 @@ text-align: center;}
 
 
 #milestone {
-    background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url('http://localhost:4200/public/img/bg_banner1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), 
+              url('http://localhost:4200/assets/img/bg_banner1.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 60px 0; /* add padding for spacing */
+  color: #fff; /* ensure text is readable */
 }
+
 
 #milestone h1,
 #milestone p {
@@ -434,10 +448,10 @@ text-align: center;}
 }
 
 footer {
-    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url('http://localhost:4200/public/img/bg_banner1.jpg'), #082032;;
+    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url('http://localhost:4200/assets/img/bg_banner1.jpg'), #082032;;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: start;
+    background-repeat: round;
 }
 
 footer .footer-top {
